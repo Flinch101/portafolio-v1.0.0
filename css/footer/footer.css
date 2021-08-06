@@ -1,0 +1,52 @@
+footer .redes-sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  margin: 20px;
+  text-align: center;
+  border-radius: 100px;
+  transition: .3s ease all;
+}
+
+/* Iconos */
+footer .redes-sociales .icon-twitter {background: #1da1f2;}
+footer .redes-sociales .icon-facebook {background: #3b5998;}
+footer .redes-sociales .icon-instagram {background: #c13584;}
+
+footer .redes-sociales a {
+  font-size: 20px;
+  line-height: 60px;
+}
+
+footer .contenedor-icono:hover a{
+  animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+footer .creador {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #c13584;
+}
+
+footer .creador a {color: #000;}
+footer .creador a:hover {text-decoration: underline;}

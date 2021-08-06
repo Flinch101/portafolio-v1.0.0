@@ -1,0 +1,47 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.overlay .contenedor-img {
+  position: relative;
+}
+
+.overlay .icon-cancel{
+  position: absolute;
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  right: 0;
+}
+
+.overlay.activo {
+  display: flex;
+}
+
+.overlay img {
+  max-width: 100%;
+}
+
+.overlay .descripcion {
+  display: block;
+  background: #fff;
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+

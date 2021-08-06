@@ -1,0 +1,16 @@
+header .categorias{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .categorias a {
+  color: #9b9b9b;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .categorias a.activo {
+  color: #000;
+}

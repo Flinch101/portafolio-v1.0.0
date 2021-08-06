@@ -1,0 +1,53 @@
+@import url("fontello.css");
+@import url("normalize.css");
+
+@import url("header/header.css");
+@import url("grid/grid.css");
+@import url("overlay/overlay.css");
+@import url("footer/footer.css");
+@import url("mediaqueries/media.css");
+
+body {
+  background: #f3f3f3;
+  font-family: 'Open Sans',sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: none;
+}
+
+.inicializando {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, .2);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left: 4px solid rgba(0, 0, 0, .8);
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
