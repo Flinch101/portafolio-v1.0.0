@@ -29,7 +29,7 @@ window.addEventListener('load',() => {
 
     // Listener filtrado por barra de busqueda;
     document.querySelector('#barra-busqueda').addEventListener('input',(evt) => { // input es cada que borre/escriba algo en el input
-      const busqueda = evt.target.value;
+      const busqueda = evt.target.value.toLowerCase();
 
       // EXTRA
       if(busqueda == " " || busqueda == ""){
